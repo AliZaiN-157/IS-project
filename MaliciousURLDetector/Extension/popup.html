@@ -1,49 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="popup.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Malicious URL Checker</title>
 </head>
-
 <body>
-
-    <div class="container">
-
-        <div class="title">
-            <br>
-            <center><img src="icons/shield.png" alt="Shield" style="width: 30px; height: 40px; position: absolute; top: 40px; left: 50px;"><strong style="left: -30px">Sanchalak</strong></center>
-        </div>
-
-        <div class="wrapper">
-
-            <div class="info">
-                <center>Is this website safe??</center>
-            </div>
-
-            <div class="p1">
-                <center>The URL being tested is <BR>
-                    <div id="site"></div>
-                </center>
-
-                <div class="check" align=center>
-
-                    <button class="button"><span>Safe or Not?</span></button>
-
-                    <div id="loader" class="loader hidden">
-                        <span >&#8987;</span> Please wait...
-                    </div>
-                    <div id="div1"></div>
-                    <div id="div2"></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+  <div id="container">
+    <h1>Malicious URL Checker</h1>
+    <div id="result">
+      <img id="status-icon" src="icons/loader.gif" alt="Loading">
+      <p id="status-text">Checking...</p>
     </div>
+  </div>
+  <script src="popup.js"></script>
 </body>
-
 </html>

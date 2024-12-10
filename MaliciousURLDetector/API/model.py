@@ -5,7 +5,6 @@ import numpy as np
 with open('./Model/Try/lgb_model.pkl', 'rb') as file:
     model = joblib.load(file)
 
-
 def predict_url(url: str):
 
     url_features = {
